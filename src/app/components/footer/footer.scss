@@ -1,0 +1,105 @@
+.footer {
+  //background: #000;
+  background: linear-gradient(135deg, #0A2D57 0%, #0066FF 100%);
+  color: #fff;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    
+  }
+
+  .footer-section {
+    flex: 1 1 220px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #b3b3b3;
+      }
+      
+    }
+  }
+  .footer-section a{
+    color: #fff;
+    text-decoration: none;
+
+    &:hover{
+      color: #b3b3b3;
+    }
+  }
+
+  .about {
+    max-width: 300px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .brand-logo {
+      width: 30px;
+      height: 30px;
+    }
+
+    .brand-name {
+      font-size: 26px;
+      font-weight: 700;
+    }
+  }
+
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 18px;
+    font-size: 18px;
+
+    i {
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: #b3b3b3;
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 50px;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 14px;
+
+    p {
+      margin: 5px 0;
+    }
+  }
+}

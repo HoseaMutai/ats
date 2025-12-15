@@ -1,0 +1,19 @@
+<section class="solutions-section">
+<div class="container">
+<h2 class="section-title">Our Software Solutions</h2>
+<p class="section-subtitle">
+Reliable, scalable, and secure digital solutions for modern businesses
+</p>
+
+
+<div class="solutions-grid">
+<div class="solution-card" *ngFor="let solution of solutions">
+<div class="icon">
+<i [class]="solution.icon"></i>
+</div>
+<h3>{{ solution.title }}</h3>
+<p>{{ solution.description }}</p>
+</div>
+</div>
+</div>
+</section>

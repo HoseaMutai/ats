@@ -1,0 +1,50 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<nav class="navbar">
+  <div class="container">
+
+    <div class="logo">
+      <img src="/images/ATS.png" />
+      <h2>ATS HUB</h2>
+      <!-- <span>Knowledge.Designs.Softwares</span> -->
+    </div>
+     <!-- HAMBURGER MENU -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+    </label>
+
+    <ul class="menu">
+
+      <li>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">HOME</a>
+      </li>
+
+      <!-- PRODUCTS DROPDOWN -->
+      <li class="dropdown">
+        <a>
+          TECH-SITE
+          <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+          <li><a routerLink="/train">Teach & Train</a></li>
+          <li><a routerLink="/dev">Design & Develop</a></li>
+        </ul>
+      </li>
+
+      <!-- ABOUT DROPDOWN -->
+      <li class="dropdown">
+        <a routerLink="/about" routerLinkActive="active">
+          ABOUT
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/contact" routerLinkActive="active">CONTACT</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+

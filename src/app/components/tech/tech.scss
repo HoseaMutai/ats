@@ -1,0 +1,95 @@
+.services-container {
+  /* Mimic the subtle, light-filled background from the image */
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px 20px;
+  text-align: center;
+  /* Optional: Add a subtle blurred border/shadow to hint at the original image's background */
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05) inset;
+  
+}
+
+/* --- Title Styles --- */
+.section-title {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+/* --- Grid Container Styles --- */
+.service-cards-grid {
+  display: grid;
+  /* Use CSS Grid to create 3 equal columns for desktop */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* Space between cards */
+  max-width: 1200px; /* Center the grid content */
+  margin: 0 auto;
+
+}
+
+/* --- Card Styles --- */
+.service-card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures the image respects the card's border radius */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Image Styles --- */
+.card-image-wrapper {
+  /* Set a fixed aspect ratio for the image container */
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%; /* 3:2 Aspect Ratio (Height is 2/3 of the width) */
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* --- Content Styles --- */
+.card-content {
+  padding: 20px 15px;
+}
+
+.card-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* --- Media Query for Responsiveness --- */
+@media (max-width: 900px) {
+  /* On tablets and smaller, switch to 2 columns */
+  .service-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  /* On mobile, switch to 1 column */
+  .service-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 2em;
+  }
+}

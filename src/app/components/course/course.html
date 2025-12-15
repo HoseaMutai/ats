@@ -1,0 +1,21 @@
+<section class="courses-section">
+<div class="container">
+<h2 class="section-title">Our Courses</h2>
+<p class="section-subtitle">
+Practical, skill-based training designed for real-world success
+</p>
+
+
+<div class="courses-rows">
+<div class="course-row" *ngFor="let course of courses">
+<div class="icon">
+<i [class]="course.icon"></i>
+</div>
+<div class="content">
+<h3>{{ course.title }}</h3>
+<p>{{ course.description }}</p>
+</div>
+</div>
+</div>
+</div>
+</section>

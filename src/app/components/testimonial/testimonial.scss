@@ -1,0 +1,173 @@
+.testimonials-section {
+background: rgba(255, 255, 255, 0.8);
+color: #ffffff;
+margin-bottom: 40px;
+}
+
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+
+.section-title {
+text-align: center;
+font-size: 2.2rem;
+margin-bottom: 10px;
+color: #0c0c0c;
+}
+
+
+.section-subtitle {
+text-align: center;
+color: #0c0c0c;
+margin-bottom: 50px;
+}
+
+
+.testimonials-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 30px;
+}
+
+
+.testimonial-card {
+background: #727070;
+padding: 30px;
+border-radius: 14px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.testimonial-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+
+.card-header {
+display: flex;
+align-items: center;
+gap: 15px;
+margin-bottom: 20px;
+}
+
+
+.avatar {
+width: 55px;
+height: 55px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+
+.card-header h4 {
+margin: 0;
+font-size: 1.1rem;
+}
+
+
+.card-header span {
+font-size: 0.85rem;
+color: #aaaaaa;
+}
+
+
+.message {
+font-style: italic;
+color: #dddddd;
+margin-bottom: 20px;
+}
+
+
+.rating {
+color: #f5c542;
+}
+/* =========================
+   Responsive Media Queries
+   ========================= */
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-card {
+    padding: 25px;
+  }
+}
+
+/* Small tablets & large phones (≤ 768px) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+  }
+
+  .testimonials-grid {
+    gap: 20px;
+  }
+
+  .card-header {
+    gap: 12px;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .message {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile phones (≤ 480px) */
+@media (max-width: 480px) {
+  .testimonials-section {
+    margin-bottom: 25px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .card-header h4 {
+    font-size: 1rem;
+  }
+
+  .card-header span {
+    font-size: 0.8rem;
+  }
+
+  .message {
+    font-size: 0.9rem;
+  }
+}

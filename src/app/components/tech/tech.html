@@ -1,0 +1,18 @@
+<section class="services-container">
+  <h2 class="section-title">ATS Products</h2>
+
+  <div class="service-cards-grid">
+    <div *ngFor="let service of services" class="service-card">
+      
+      <div class="card-image-wrapper">
+        <img [src]="service.imageUrl" [alt]="service.title" class="card-image">
+      </div>
+      
+      <div class="card-content">
+        <h3 class="card-title">{{ service.title }}</h3>
+        <p class="card-description">{{ service.description }}</p>
+      </div>
+
+    </div>
+  </div>
+</section>
